@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  gap: 1rem;
+  background-color: #000000;
+  transition: all 0.4s;
+  font-family: sans-serif;
+}
+
+#btn {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  border: 2px solid #fff;
+  color: #fff;
+  background: transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+#btn:active {
+  padding: 1rem;
+}
+
+#hex {
+  color: #fff;
+  font-weight: 900;
+  font-size: 2rem;
+}
