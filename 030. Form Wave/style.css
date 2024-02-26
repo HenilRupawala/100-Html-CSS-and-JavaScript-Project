@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  font-family: sans-serif;
+}
+
+.container {
+  background: #fff;
+  padding: 3rem 4rem 2.5rem;
+  border-radius: 5px;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.container .special {
+  background: crimson;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.form-control {
+  position: relative;
+  margin: 1rem 0 2rem;
+  width: 300px;
+}
+
+.form-control input {
+  display: inline-block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+  padding: 1rem 0;
+  font-size: 1rem;
+  color: #000;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  outline: none;
+  border-bottom-color: crimson;
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
+}
+
+.btn {
+  outline: none;
+  background: crimson;
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+/* JavaScript */
+.form-control label span {
+  display: inline-block;
+  font-size: 1rem;
+  min-width: 5px;
+  transition: 0.3s ease;
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: crimson;
+  transform: translateY(-30px);
+}
