@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: white;
+  --primary-label: black;
+  --secondary-label: white;
+  --white-ball: white;
+  --black-ball: black;
+}
+
+body {
+  background: var(--primary-color);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+}
+
+#switch {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+label {
+  display: block;
+  position: relative;
+  height: 50px;
+  width: 100px;
+  background: var(--primary-label);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+label::before {
+  content: "";
+  position: absolute;
+  background: var(--white-ball);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#switch:checked + label:before {
+  background: var(--black-ball);
+  left: calc(100% - 85px);
+  transform: translateX(100%);
+}
+
+#switch:checked + label {
+  background: var(--secondary-label);
+}
