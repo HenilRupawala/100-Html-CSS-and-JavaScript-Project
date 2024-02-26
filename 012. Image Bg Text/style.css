@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 10rem;
+  font-weight: 900;
+  background-image: url(https://images.unsplash.com/photo-1705798269847-2fc6c5c36009?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8);
+  background-size: contain;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
