@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(5, 5, 5);
+  font-family: sans-serif;
+}
+
+.container {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100vw;
+}
+
+.bg-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.image-1 {
+  background-image: url(https://wallpapercave.com/wp/wp12681774.jpg);
+}
+.image-2 {
+  background-image: url(https://wallpapercave.com/wp/wp11940888.jpg);
+}
+.image-3 {
+  background-image: url(https://wallpapercave.com/wp/wp12294295.png);
+}
+.image-4 {
+  background-image: url(https://wallpapercave.com/wp/wp5170393.jpg);
+}
+.image-5 {
+  background-image: url(https://wallpapercave.com/wp/wp12294299.jpg);
+}
+
+.slide {
+  position: relative;
+  height: 80vh;
+  border-radius: 50px;
+  flex: 0.5;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.7s ease;
+}
+
+.slide h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  opacity: 0;
+  font-size: 1.5rem;
+}
+
+.slide.active {
+  flex: 5;
+}
+
+.slide.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease 0.4s;
+}
