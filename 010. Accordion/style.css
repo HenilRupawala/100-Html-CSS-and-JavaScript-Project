@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: crimson;
+  font-family: sans-serif;
+}
+
+#accordion {
+  width: 600px;
+  margin: 200px auto;
+}
+
+#accordion li {
+  list-style: none;
+  background: #fff;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+#accordion li label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+  color: dodgerblue;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#accordion li label span {
+  transform: rotate(90deg);
+  font-size: 25px;
+}
+
+#accordion label + input[type="radio"] {
+  display: none;
+}
+
+#accordion .content {
+  font-size: 15px;
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+#accordion label + input[type="radio"]:checked + .content {
+  max-height: 400px;
+}
+
+
+
+
