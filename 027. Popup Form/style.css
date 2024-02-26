@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.content-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center center/cover;
+  text-align: center;
+}
+
+.content-container h1 {
+  font-size: 5rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.content-container p {
+  font-size: 1.25rem;
+  color: #fff;
+  width: 800px;
+  max-width: 100%;
+  line-height: 30px;
+  text-align: center;
+}
+
+.content-container .signup-btn {
+  margin: 1.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background: crimson;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.modal-container {
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  display: none;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.modal-container .modal {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  width: 400px;
+  max-width: 100%;
+  position: absolute;
+}
+
+.modal-container .modal-content {
+  padding: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+.modal-form div {
+  margin: 1.4rem 0;
+}
+
+.modal-form label {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.modal-form .form-input {
+  padding: 0.6rem;
+  width: 100%;
+}
+
+.modal-form .submit-btn {
+  font-size: 1.15rem;
+  color: #fff;
+  background: crimson;
+  outline: none;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  cursor: pointer;
+}
+
+.modal-container .close-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  outline: none;
+}
+
+/* JavaScript */
+.modal-container.show-modal {
+  display: block;
+}
